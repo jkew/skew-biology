@@ -10,7 +10,7 @@ calibrating it using non-linear regression to the function with the gnu scientif
 * [Sony IMX179 8MP CCD](https://www.amazon.com/gp/product/B01HD1V1Z6/ref=oh_aui_search_detailpage?ie=UTF8&psc=1)
 * Velcro, aluminum foil, and a lot of black legos
 * CCD at m=0
-![alt text](https://github.com/jkew/skew-biology/raw/master/spec-lego.jpg "LEGO Spectrometer" | width=100)
+![alt text](https://github.com/jkew/skew-biology/raw/master/spec-lego.jpg | width=100)
 
 ### Usage: 
 ```spec [roi x y w h] [cal C0 C1 C2]```
@@ -45,7 +45,7 @@ make
 
 ### Example usage:
 Calibrating a CFL using the mercury peaks terbium peaks.
-![alt text](https://github.com/jkew/skew-biology/raw/master/spec-example.png "Example calibration and usage" | width=250)
+![alt text](https://github.com/jkew/skew-biology/raw/master/spec-example.png | width=250 )
 
 
 
