@@ -1,7 +1,7 @@
 # skew-biology
 Software for my DYI spectrometers, sensors, pcr, and incubators.
 
-## Spectrometer
+## Spectrometer Software
 Software for reading a spectrum from a DYI spectrometer using OpenCV, 
 calibrating it using non-linear regression to the function with the gnu scientific library.
 
@@ -23,9 +23,9 @@ This software currently uses a second-order polynomial for calibration off a min
    nm = C0 + C1*p + C2*p^2 
 
 #### Calibration References
-   [Calibrating the Wavelength of Your Spectrometer](http://www.coseti.org/pc2000_2.htm)
-   [OceanOptics Cubic Calibration](https://publiclab.org/notes/wiebew/12-30-2012/spectrometer-calibration)
-   [PublicLab Linear Calibration](https://publiclab.org/notes/wiebew/12-30-2012/spectrometer-calibration)
+* [Calibrating the Wavelength of Your Spectrometer](http://www.coseti.org/pc2000_2.htm)
+* [OceanOptics Cubic Calibration](https://publiclab.org/notes/wiebew/12-30-2012/spectrometer-calibration)
+* [PublicLab Linear Calibration](https://publiclab.org/notes/wiebew/12-30-2012/spectrometer-calibration)
 
 ### Selecting a Region of Interest
 On startup the region of interest can be selected with a mouse. The pixels in this region of interest are summed to calculate intensity.
