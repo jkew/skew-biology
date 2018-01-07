@@ -191,7 +191,6 @@ void calibrate() {
     std::string cmd;
     std::cout << "CALIBRATE [?|print|clr|add|exit]" << std::endl << "> ";
     getline(std::cin, cmd, '\n');
-    std::cin.ignore();
     if (cmd.compare(std::string("prnt")) == 0) {
         for (int i = 0; i < calibration.size(); ++i) {
 	  std::cout << "Index: " << calibration[i].first << " nm: " << calibration[i].second << std::endl;  
@@ -210,7 +209,6 @@ void calibrate() {
       while (true) {
 	std::cout << "\tindex> ";
 	getline(std::cin, cmd);
-	std::cin.ignore();
 	int idx, nm = 0;
 	if (cmd.size() > 0) {
 	  idx = stoi(cmd);
@@ -306,6 +304,6 @@ int main(int args, char** argv)
   std::cout << "ROI: " << roi.x << " " << roi.y << " " << roi.width << " " << roi.height << std::endl;
   std::thread t1(command);
   render();
-  // the camera will be deinitialized automatically in VideoCapture destructor
+  sleep(1);
   return 0;
 }
