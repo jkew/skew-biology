@@ -1,11 +1,11 @@
 # skew-biology
-Software for my DYI spectrometers, sensors, pcr, and incubators.
+Software for my DIY spectrometers, sensors, pcr, and incubators.
 
 ## Spectrometer Software
-Software for reading a spectrum from a DYI spectrometer using OpenCV, 
+Software for reading a spectrum from a DIY spectrometer using OpenCV, 
 calibrating it using non-linear regression to the function with the gnu scientific library.
 
-#### Example DYI Lego Spectrometer
+#### Example DIY Lego Spectrometer
 ![Lego Spectrometer](https://github.com/jkew/skew-biology/raw/master/spec-lego.jpg)
 * [1k diffraction grating](https://www.amazon.com/gp/product/B0074R74D8/ref=oh_aui_detailpage_o09_s00?ie=UTF8&psc=1)
 * [Sony IMX179 8MP CCD](https://www.amazon.com/gp/product/B01HD1V1Z6/ref=oh_aui_search_detailpage?ie=UTF8&psc=1)
@@ -47,9 +47,6 @@ make
 Calibrating a CFL using the mercury peaks terbium peaks. Appears to accurately predict europium peaks at 612nm.
 [CFL Spectrum Reference](https://commons.wikimedia.org/wiki/File:Fluorescent_lighting_spectrum_peaks_labelled.gif)
 ![Example Calibration](https://github.com/jkew/skew-biology/raw/master/spec-example.png)
-
-
-
 
 # Incubator
 PID controled incubator w/ IR
