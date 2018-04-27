@@ -189,9 +189,10 @@ void top10() {
 void calibrate() {
   while(running) {
     std::string cmd;
-    std::cout << "CALIBRATE [?|print|clr|add|exit]" << std::endl << "> ";
+    std::cout << "CALIBRATE [?|[p]rint|clr|add|exit]" << std::endl << "> ";
     getline(std::cin, cmd, '\n');
-    if (cmd.compare(std::string("prnt")) == 0) {
+    if (cmd.compare(std::string("p")) == 0) {
+         std::cout << "Calibration Curve: nm = " << c1 << "+" << c2 << "P+" << c3 << "P^2" << std::endl;
         for (int i = 0; i < calibration.size(); ++i) {
 	  std::cout << "Index: " << calibration[i].first << " nm: " << calibration[i].second << std::endl;  
 	}
@@ -291,9 +292,9 @@ int main(int args, char** argv)
 
   for (int i = 1; i < args - 3; i++) {
     if (strcmp(argv[i], "cal") == 0) {
-      c1 = atoi(argv[i + 1]);
-      c2 = atoi(argv[i + 2]);
-      c3 = atoi(argv[i + 3]);
+      c1 = atof(argv[i + 1]);
+      c2 = atof(argv[i + 2]);
+      c3 = atof(argv[i + 3]);
     }
   }
 
